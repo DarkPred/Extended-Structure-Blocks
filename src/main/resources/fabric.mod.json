@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "structuredebugger",
+  "version": "${version}",
+  "name": "StructureDebugger",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/DarkPred/StructureDebugger"
+  },
+  "license": "MIT",
+  "icon": "assets/structuredebugger/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": ["com.github.darkpred.structuredebugger.client.StructureDebuggerClient"],
+    "main": ["com.github.darkpred.structuredebugger.StructureDebugger"]
+  },
+  "mixins": [
+    "structuredebugger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
